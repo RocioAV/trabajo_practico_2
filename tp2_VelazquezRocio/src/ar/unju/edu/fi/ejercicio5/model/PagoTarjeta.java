@@ -23,14 +23,20 @@ public class PagoTarjeta implements Pago {
 
 	@Override
 	public void realizarPago(double monto) {
-		
+		double conRecargo;
+		int porcentaje =15;
+		conRecargo = monto+ monto*porcentaje/100;
+		this.montoPagado= conRecargo;
 		
 	}
 
 	@Override
 	public void imprimirRecibo() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("----PAGO REALIZADO CON TARJETA----");
+		System.out.println("Número de tarjeta: "+this.numeroTarjeta);
+		System.out.println("Fecha de pago: "+this.fechaPago);
+		System.out.println("Monto pagado: "+ this.montoPagado);
+		System.out.println("----------------------");
 	}
 
 	public String getNumeroTarjeta() {

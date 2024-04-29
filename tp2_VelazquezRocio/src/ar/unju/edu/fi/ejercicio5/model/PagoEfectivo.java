@@ -17,16 +17,26 @@ public class PagoEfectivo implements Pago {
 		this.montoPagado = montoPagado;
 		this.fechaPago = fechaPago;
 	}
+	
+	/**
+	 * 
 
+	 */
 	@Override
 	public void realizarPago(double monto) {
-		// TODO Auto-generated method stub
+		double conDescuento;
+		int porcentaje=10;
+		conDescuento=monto-porcentaje*10/100;
+		this.montoPagado=conDescuento;
 		
 	}
 
 	@Override
 	public void imprimirRecibo() {
-		// TODO Auto-generated method stub
+		System.out.println("----PAGO REALIZADO EN EFECTIVO----");
+		System.out.println("Fecha de pago: "+this.fechaPago);
+		System.out.println("Monto pagado: "+ this.montoPagado);
+		System.out.println("----------------------");
 		
 	}
 
