@@ -9,6 +9,7 @@ public class Producto {
 	private Double precioUnitario;
 	private OrigenFabricacion origenFab;
 	private Categoria categoria;
+	private boolean estado;
 	
 	//ENUMERADOS 
 	public enum OrigenFabricacion{
@@ -25,16 +26,30 @@ public class Producto {
 	}
 
 
+	
+
+	//METODOS ACCESORES	
+
 	public Producto(String codigo, String description, Double precioUnitario, OrigenFabricacion origenFab,
-			Categoria categoria) {
+			Categoria categoria, boolean estado) {
 		this.codigo = codigo;
 		this.description = description;
 		this.precioUnitario = precioUnitario;
 		this.origenFab = origenFab;
 		this.categoria = categoria;
+		this.estado = estado;
 	}
 
-	//METODOS ACCESORES	
+
+
+
+	public boolean isEstado() {
+		return estado;
+	}
+
+	public void setEstado(boolean estado) {
+		this.estado = estado;
+	}
 
 	public String getCodigo() {
 		return codigo;
@@ -86,9 +101,14 @@ public class Producto {
 	}
 
 
+
+
 	@Override
 	public String toString() {
-		return "Producto [codigo=" + codigo + ", descripcion=" + description + ", Precio unitario=" + precioUnitario
-				+ ", Origen fabricante=" + origenFab + ", categoria=" + categoria + "]";
+		return "Producto [codigo=" + codigo + ", description=" + description + ", precioUnitario=" + precioUnitario
+				+ ", origenFab=" + origenFab + ", categoria=" + categoria + ", estado=" + estado + "]";
 	}
+
+
+	
 }

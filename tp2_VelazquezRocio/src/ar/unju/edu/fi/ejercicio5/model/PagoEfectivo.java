@@ -26,7 +26,7 @@ public class PagoEfectivo implements Pago {
 	public void realizarPago(double monto) {
 		double conDescuento;
 		int porcentaje=10;
-		conDescuento=monto-porcentaje*10/100;
+		conDescuento=monto-monto*porcentaje/100;
 		this.montoPagado=conDescuento;
 		
 	}
