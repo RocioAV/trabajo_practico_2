@@ -6,11 +6,11 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import ar.unju.edu.fi.ejercicio5.model.PagoEfectivo;
-import ar.unju.edu.fi.ejercicio5.model.PagoTarjeta;
-import ar.unju.edu.fi.ejercicio5.model.Producto;
-import ar.unju.edu.fi.ejercicio5.model.Producto.Categoria;
-import ar.unju.edu.fi.ejercicio5.model.Producto.OrigenFabricacion;
+import ar.edu.unju.fi.ejercicio5.model.PagoEfectivo;
+import ar.edu.unju.fi.ejercicio5.model.PagoTarjeta;
+import ar.edu.unju.fi.ejercicio5.model.Producto;
+import ar.edu.unju.fi.ejercicio5.model.Producto.Categoria;
+import ar.edu.unju.fi.ejercicio5.model.Producto.OrigenFabricacion;
 
 
 
