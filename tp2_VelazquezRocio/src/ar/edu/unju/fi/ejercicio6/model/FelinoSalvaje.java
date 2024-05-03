@@ -39,6 +39,11 @@ public class FelinoSalvaje {
 		this.peso = peso;
 	}
 
+	@Override
+	public String toString() {
+		return "FelinoSalvaje [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + "]";
+	}
+
 	
 	
 }
