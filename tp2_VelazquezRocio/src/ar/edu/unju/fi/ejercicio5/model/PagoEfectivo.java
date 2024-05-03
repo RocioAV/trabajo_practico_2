@@ -1,4 +1,4 @@
-package ar.unju.edu.fi.ejercicio5.model;
+package ar.edu.unju.fi.ejercicio5.model;
 
 import java.time.LocalDate;
 
